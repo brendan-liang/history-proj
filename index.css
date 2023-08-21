@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --bg1: #ccd5aeff;
+    --bg2: #e9edc9ff;
+    --bg3: #fefae0ff;
+    --bg4: #faedcdff;
+    --bg5: #d4a373ff;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#enable-js {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 99;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100vh;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.ip1 {
+    background: var(--bg1);
+}
+
+.ip2 {
+    background: var(--bg2);
+}
+
+.ip3 {
+    background: var(--bg3);
+}
+
+.info-pane {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.ip-main-img-wrap {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    left: 50px;
+    border: solid white 10px;
+    background: white;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ip-main-img {
+    width: calc(50vw - 100px);
+}
+
+.ip-main-img-src {
+    width: calc(50vw - 100px);
+    position: absolute;
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+.ip-main-head {
+    width: calc(50vw - 100px);
+    position: absolute;
+    font-size: 80px;
+    text-align: left;
+    right: 100px;
+    top: calc(25vh - 100px);
+}
+
+.ip-main-text {
+    width: calc(50vw - 100px);
+    position: absolute;
+    text-align: left;
+    right: 100px;
+    top: 25vh;
+}
+
+.ip-figures {
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+    margin-right: 5vw;
+}
+
+.ip-figure-wrap {
+    width: calc(8vw);
+    height: calc(22vh + 24px);
+    background: white;
+    border-radius: 5px;
+    border: solid white 10px;
+    display: inline-block;
+    margin-left: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ip-figure {
+    width: calc(8vw);
+    height: calc(22vh);
+    object-fit: cover;
+}
+
+.ip-figure-src {
+    width: calc(8vw);
+    height: 20px;
+    position: absolute;
+    display: block;
+    bottom: 8px;
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+:-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--bg1);
+    padding: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: white;
+    border-radius: 5px;
+}
