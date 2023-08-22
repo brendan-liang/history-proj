@@ -1,15 +1,19 @@
 document.getElementById("enable-js").remove();
 
 document.addEventListener("keydown", (e) => {
-    console.log(e);
-    if (e.key == ' ' | e.key == 'ArrowDown' | e.key == 'ArrowRight') {
+    console.log(e.key)
+    if (e.key == ' ' | e.key == 'ArrowDown' | e.key == 'ArrowRight' | e.key == 'PageDown') {
         e.preventDefault();
-        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-        window.scrollTo({top: (Math.floor(scrollY / vh)+1)*vh, behavior: "smooth"});
+        const vh = Math.round(document.getElementById("start-pane").getBoundingClientRect().height);
+        const scrollPos = Math.round(scrollY);
+        console.log(`Slide Number: ${scrollPos}, ${vh}, actual: ${scrollY}`);
+        window.scrollTo({top: (Math.round(scrollPos / vh)+1)*vh, behavior: "smooth"});
     }
-    if (e.key == 'ArrowUp' | e.key == 'ArrowLeft') {
+    if (e.key == 'ArrowUp' | e.key == 'ArrowLeft' | e.key == 'PageUp') {
         e.preventDefault();
-        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-        window.scrollTo({top: (Math.floor(scrollY / vh)-1)*vh, behavior: "smooth"});
+        const vh = Math.round(document.getElementById("start-pane").getBoundingClientRect().height);
+        const scrollPos = Math.round(scrollY);
+        console.log(`Slide Number: ${scrollPos}, ${vh}, actual: ${scrollY}`);
+        window.scrollTo({top: (Math.round(scrollPos / vh)-1)*vh, behavior: "smooth"});
     }
 })
