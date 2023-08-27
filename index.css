@@ -54,15 +54,15 @@ body {
     }
     41% {
         opacity: 0;
-        background-image: url("imgs/image2.jpg");
+        background-image: url("imgs/image3.png");
     }
     50% {
         opacity: 0.3;
-        background-image: url("imgs/image2.jpg");
+        background-image: url("imgs/image3.png");
     }
     60% {
         opacity: 0;
-        background-image: url("imgs/image2.jpg");
+        background-image: url("imgs/image3.png");
     }
     61% {
         opacity: 0;
@@ -161,18 +161,21 @@ body {
 .ip-main-img-wrap {
     height: 100vh;
     position: absolute;
-    left: 50px;
+    left: 2.5vw;
     border: solid var(--bg4) 10px;
     background: var(--bg4);
 }
 
 .ip-main-img {
-    width: calc(50vw - 100px);
+    width: 45vw;
+    height: 60vh;
+    object-fit: contain;
+    background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ip-main-img-src {
-    width: calc(50vw - 100px);
+    width: 45vw;
     position: absolute;
     display: block;
     text-align: right;
@@ -190,13 +193,13 @@ body {
 
 .ip-main-text {
     width: 45vw;
-    height: calc(75vh - 50px);
+    height: 70vh;
     overflow-y: auto;
     position: absolute;
     text-align: left;
     right: 5vw;
     top: 20vh;
-    font-size: 2vh;
+    font-size: 20px;
 }
 
 .ip-figures {
@@ -207,13 +210,13 @@ body {
 }
 
 .ip-figure-wrap {
-    width: calc(8vw);
-    height: calc(10vw + 24px);
+    width: 8vw;
+    height: 24vh;
     background: white;
     border-radius: 5px;
     border: solid white 10px;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 1vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
