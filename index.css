@@ -134,6 +134,8 @@ body {
 .highlight {
     background-color: var(--bg5);
     padding: 2px 6px;
+    color: white;
+    font-weight: bold;
 }
 
 .ip1 {
@@ -153,6 +155,7 @@ body {
     height: 100vh;
     margin: 0;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ip-main-img-wrap {
