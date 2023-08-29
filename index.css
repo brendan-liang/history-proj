@@ -78,16 +78,16 @@ body {
     }
     81% {
         opacity: 0;
-        background-image: url("imgs/dekock.jpg");
+        background-image: url("imgs/image5.jpg");
     }
     90% {
         opacity: 0.5;
-        background-image: url("imgs/dekock.jpg");
+        background-image: url("imgs/image5.jpg");
     }
     100% {
         opacity: 0;
         transform: scale(1.5);
-        background-image: url("imgs/dekock.jpg");
+        background-image: url("imgs/image5.jpg");
     }
 }
 
@@ -183,6 +183,18 @@ body {
     width: 100%;
     font-style: italic;
     display: inline-block;
+}
+
+.biblio {
+    margin-top: 5vh;
+    font-size: 2.3vh;
+    overflow-y: scroll;
+    height: 90vh;
+}
+
+pre {
+    font-size: 10px;
+    margin-left: 5px;
 }
 
 .note {
